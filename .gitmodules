@@ -1,3 +1,5 @@
 [submodule "ergogen/footprints/ceoloide"]
 	path = ergogen/footprints/ceoloide
 	url = https://github.com/ceoloide/ergogen-footprints.git
+[submodule "ergogen/footprints/infused-kim"]
+	path = ergogen/footprints/infused-kim

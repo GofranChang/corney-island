@@ -234,7 +234,7 @@ points:
         - helper
       anchor:
         - ref: mcu_cover_top_left
-          shift: [-1.03,0]
+          shift: [-1.015, 0]
     plate_additional_outline_bottom_right:
       key.tags:
         - helper
@@ -842,6 +842,29 @@ pcbs:
         adjust:
           shift: [0.5 ks + 7.25, 0.375 kp -50.25]
           rotate: 90
+
+      pullup_sda:
+        what: infused-kim/smd_0805
+        where: matrix_inner_top
+        params:
+          side: F
+          reverse: true      # 不需要双面
+          components: 1       # 只放一颗电阻
+          net_1_from: SDA
+          net_1_to: VCC
+          label_1: '4.7k'
+
+      pullup_scl:
+        what: infused-kim/smd_0805
+        where: matrix_inner_top
+        params:
+          side: F
+          reverse: true      # 不需要双面
+          components: 1       # 只放一颗电阻
+          net_1_from: SDA
+          net_1_to: VCC
+          label_1: '4.7k'
+
 cases:
   corney_island_bottom_tray:
     - what: outline
